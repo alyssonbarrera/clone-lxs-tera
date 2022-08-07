@@ -23,7 +23,7 @@ export default function Login() {
                         className='flex gap-8 flex-grow w-full flex-col justify-center max-w-xs'
                         onClick={() => {setButtonState("disabled")}}
                     >
-                        <Image className='w-44 mx-auto' src="https://app.somostera.com/img/lxs_logo.98e12299.svg" alt="" />
+                        <img className='w-44 mx-auto' src="https://app.somostera.com/img/lxs_logo.98e12299.svg" alt="logo tera" />
                         <LoginButton state={buttonState} />
                     </div>
                     <footer className='mb-8 text-sm md:text-base'>

@@ -5,9 +5,9 @@ import type { AppProps } from 'next/app'
 import { SessionProvider as NextAuthProvider } from 'next-auth/react'
 
 import NProgress from 'nprogress'
-import theme from '../../styles/theme'
-import '../../styles/globals.css'
-import "../../styles/nprogress.css"
+import theme from '../styles/theme'
+import '../styles/globals.css'
+import "../styles/nprogress.css"
 
 function MyApp({ Component, pageProps }: AppProps) {
 
