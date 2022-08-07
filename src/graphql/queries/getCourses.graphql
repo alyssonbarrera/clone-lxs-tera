@@ -1,0 +1,13 @@
+query GetCoursesHome {
+    courses {
+        id
+        slug
+        alternativeSlug
+        courseImage {
+            url
+        }
+        courseName
+        courseAcronym
+        coursePeriod
+    }
+}

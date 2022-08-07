@@ -1,0 +1,50 @@
+query GetLessonsByChapterSlug ($slug: String) {
+  chapters(where: {slug: $slug}) {
+    id
+    slug
+    title
+    duration
+    conclusion {
+      id
+      title
+      summary {
+        html
+      }
+    }
+    presentation {
+      ... on Presentation {
+        id
+        title
+        summary {
+          html
+        }
+        objectives {
+          html
+        }
+        dedication
+      }
+    }
+    lessons {
+      id
+      slug
+      title
+      summary {
+        html
+      }
+      content {
+        html
+      }
+      video {
+        url
+      }
+    }
+    practice {
+      id
+      content {
+        html
+      }
+      title
+      duration
+    }
+  }
+}

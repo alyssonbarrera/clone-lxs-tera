@@ -1,0 +1,13 @@
+query GetCoursesByAcronym ($acronym: String) {
+    courses (where: {courseAcronym: $acronym}) {
+        id
+        slug
+        courseName
+        courseAcronym
+        coursePeriod
+        alternativeSlug
+        courseImage {
+            url
+        }
+    }
+}

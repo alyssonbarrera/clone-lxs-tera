@@ -1,0 +1,32 @@
+.content h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-block: 0.5em;
+}
+
+.content ul li {
+    list-style: disc;
+    padding-block: 0.8rem;
+    margin-left: 1rem;
+}
+
+.content ul li::marker {
+    font-weight: bold;
+}
+
+.content p {
+    margin-block: 1rem;
+}
+
+.content h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-block: 0.5em;
+}
+
+.content a {
+    color: rgb(14, 170, 227);
+    font-weight: bold;
+}

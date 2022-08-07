@@ -1,0 +1,51 @@
+query GetModulesAndChapters ($courseAcronym: String) {
+    course(where: {courseAcronym: $courseAcronym }) {
+    courseName
+    courseAcronym
+    courseImage {
+      url
+    }
+    coursePeriod
+    id
+    slug
+    modules {
+        liveLessons {
+          id
+          slug
+          title
+          date
+          startTime
+          endTime
+          about {
+              html
+          }
+          objectives {
+              html
+          }
+          teacher {
+            name
+            image {
+              url
+            }
+            bio
+            linkedin
+          }
+        }
+      id
+      moduleNumber
+      moduleTitle
+      chapters {
+        id
+        slug
+        title
+        duration
+        lessons {
+          id
+          video {
+            url
+          }
+        }
+      }
+    }
+  }
+}
