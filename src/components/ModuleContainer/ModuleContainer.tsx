@@ -64,6 +64,7 @@ interface ModuleProps {
 export function ModuleContainer({ number, title, lessons, liveLessons }: ModuleProps) {
     const router = useRouter()
     const routerPath = router.query.courseSlug
+    console.log(liveLessons)
 
     return (
         <Element name={`module-${number}`}>
@@ -95,8 +96,8 @@ export function ModuleContainer({ number, title, lessons, liveLessons }: ModuleP
                                 key={liveLesson.title}
                                 teacherImage={liveLesson.teacher.image.url}
                                 title={liveLesson.title}
-                                day={liveLesson.day}
-                                month={liveLesson.month}
+                                day={liveLesson.date.split('-')[2]}
+                                month={new Date(liveLesson.date).toLocaleString('pt-BR', { month: 'short' }).slice(0, -1)}
                                 startTime={liveLesson.startTime}
                                 endTime={liveLesson.endTime}
                                 teacherName={liveLesson.teacher.name}

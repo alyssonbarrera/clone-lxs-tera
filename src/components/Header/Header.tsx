@@ -18,7 +18,7 @@ function HeaderComponent() {
                   </picture>
                 </a>
             </Link>
-            <div className="flex items-center gap-16">
+            <div className="flex items-center gap-10">
                 <p className="text-sm font-sans cursor-pointer">AJUDA</p>
                 <Popover isLazy>
                   <PopoverTrigger>
