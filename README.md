@@ -2,13 +2,13 @@
 
 ## Português
 
-#### Clone da plataforma de ensino da escola: <a href="https://somostera.com/">Tera</a>
+#### Clone da plataforma de ensino da <a href="https://somostera.com/">Tera</a>
 
 A aplicação foi desenvolvida em React com TypeScript e Next.js, utilizando Talwind CSS e Chakra UI para estilização e adição de determinados componentes, Hygraph para produção de conteúdo, GraphQL para consulta do conteúdo produzido, Apollo Client para gerenciamento de dados com GraphQL, Codegen para gerar código a partir do esquema e realizar operações GraphQL, Jest e Testing Library para realizar testes unitários, e FaunaDB como banco de dados para registrar usuário e seu respectivo curso.
 
 ## English
 
-#### Clone of the teaching platform: <a href="https://somostera.com/">Tera</a>
+#### Clone of <a href="https://somostera.com/">Tera's</a> learning platform
 
 The application was developed in React with TypeScript and Next.js, using Talwind CSS and Chakra UI for stylization and addition of certain components, Hygraph for content production, GraphQL for querying the content produced, Apollo Client for data management with GraphQL, Codegen to generate code from the schema and perform GraphQL, Jest and Testing Library operations to perform unit tests,  and FaunaDB as a database to register users and their respective course.
 
