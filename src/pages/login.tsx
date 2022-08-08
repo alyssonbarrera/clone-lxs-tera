@@ -20,10 +20,10 @@ export default function Login() {
             <main className="md:bg-gradient h-[90vh] sm:h-[100vh] md:p-4">
                 <div className="flex flex-col bg-white items-center w-full h-full">
                     <div
-                        className='flex gap-8 flex-grow w-full flex-col justify-center max-w-xs'
+                        className='flex gap-2 flex-grow w-full flex-col justify-center max-w-xs'
                         onClick={() => {setButtonState("disabled")}}
                     >
-                        <img className='w-44 mx-auto' src="https://app.somostera.com/img/lxs_logo.98e12299.svg" alt="logo tera" />
+                        <h1 className='text-7xl font-bold mx-auto'>LXS</h1>
                         <LoginButton state={buttonState} />
                     </div>
                     <footer className='mb-8 text-sm md:text-base'>

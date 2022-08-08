@@ -12,10 +12,7 @@ function HeaderComponent() {
         <div className="flex items-center justify-between w-full max-w-6xl p-2">
             <Link href={"/"}>
                 <a>
-                  <picture>
-                    <source srcSet="https://app.somostera.com/img/tera_logo.b41d431b.svg" type="image/web" />
-                    <img className="w-10" src="https://app.somostera.com/img/tera_logo.b41d431b.svg" alt="" />
-                  </picture>
+                    <strong className="text-4xl px-3 text-white bg-black">T</strong>
                 </a>
             </Link>
             <div className="flex items-center gap-10">

@@ -8,6 +8,7 @@ import NProgress from 'nprogress'
 import theme from '../styles/theme'
 import '../styles/globals.css'
 import "../styles/nprogress.css"
+import Head from 'next/head'
 
 function MyApp({ Component, pageProps }: AppProps) {
 
@@ -26,6 +27,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <NextAuthProvider session={pageProps.session}>
         <ChakraProvider theme={theme}>
           <CustomLayout>
+            <Head>
+              <title>Clone LXS - Tera</title>
+            </Head>
             <Component {...pageProps} />
           </CustomLayout>
         </ChakraProvider>
